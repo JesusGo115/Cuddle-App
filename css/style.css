@@ -22,7 +22,6 @@ body {
 .login {
   display: flex;
   justify-content: center;
-  background-position: center;
   text-align: center;
   vertical-align: baseline;
 }
@@ -33,6 +32,10 @@ body {
 }
 
 #logo {
-  height: 250px
+  height: 250px;
 }
 
+
+.interface {
+  
+}
