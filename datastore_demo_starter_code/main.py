@@ -9,7 +9,7 @@ the_jinja_env = jinja2.Environment(
     autoescape=True)
     
 def run_query(first_line, second_line, pic_type):
-    meme = Meme(line1=first_line, line2 = second_line, img_choice = pic_type)
+    people = People(line1=first_line, line2 = second_line, img_choice = pic_type)
     meme_key = meme.put()
     print("&&&&&&&&&&&&&&&&&&&&&&&&&")
     print meme_key
@@ -26,7 +26,7 @@ def get_meme_url(meme_choice):
         url = 'https://upload.wikimedia.org/wikipedia/commons/b/b9/Typing_computer_screen_reflection.jpg'
     return url
 
-
+'''
 class EnterInfoHandler(webapp2.RequestHandler):
     def get(self):  # for a get request
         the_variable_dict = {
@@ -39,6 +39,7 @@ class EnterInfoHandler(webapp2.RequestHandler):
 
     def post(self):
         self.response.write("POST request was madfe to the EnterInfoHandler")
+'''
 
 class ShowMemeHandler(webapp2.RequestHandler):
     def post(self):
@@ -57,7 +58,7 @@ class ShowMemeHandler(webapp2.RequestHandler):
         self.response.write(results_template.render(the_variable_dict))      
         
 class AllMemesHandler(webapp2.RequestHandler):
-    def get(self):  # for a get request
+    def get(self):
         all_memes = Meme.query().fetch()
         
         the_variable_dict = {
