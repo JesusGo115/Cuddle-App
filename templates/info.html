@@ -6,11 +6,14 @@
     </head>
     <body>
         <h1 style="text-align: center">Info Page!</h1>
-        
-        <form method=POST action="/info" class="login">
-            <input name="person-name" type="text" placeholder="Your Name"><br>
-            <input name="phone-number" type="text" placeholder="Phone Number"><br>
-            <input name="email" type="text" placeholder="Email"><br>
+        <div class="info">
+          <input name="name" type="text" placeholder="Your Name"><br>
+            <input name="age" type="text" placeholder="Your Age"><br>
+            <input name="gender" type="text" placeholder="Your Gender"><br>
+            <input name="number" type="text" placeholder="Your Phone Number"><br>
+            <input name="zip" type="text" placeholder="Your Zip Code"><br>
+        </div>
+        <form method=POST action="/main" class="login">
             <input type="submit">
         </form>
 
