@@ -32,7 +32,10 @@ body {
   width: 300px;
 }
 
-#logo {
-  height: 250px
+#img {
+  height: 100px;
 }
 
+#img2 {
+  height: 250px;
+}
