@@ -24,7 +24,7 @@ class AboutPage(webapp2.RequestHandler):
 
 class LoginPage(webapp2.RequestHandler):
     def get(self):
-        about_template = the_jinja_env.get_template('templates/login.html')
+        about_template = the_jinja_env.get_template('templates/info.html')
         self.response.write(about_template.render())
     def post(self):
         self.response.write("Received a post request")
@@ -33,7 +33,7 @@ class LoginPage(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
     ('/', AboutPage),
-    ('/login', LoginPage),
+    ('/info', LoginPage),
 ], debug=True)
 
 
