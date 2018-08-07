@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome</title>
+  </head>
+  <body>
+    <h1>{{greeting}}</h1>
+    <h1>Meme Generator</h1>
+    <img height="100px" width="150px" src="https://www.publicdomainpictures.net/pictures/90000/velka/alpaca-chewing.jpg" alt="a-chewing-alpaca">
+    <h2>Welcome to my {{adjective}} Meme Generator!</h2>
+    
+    <form method=POST action="/showmeme">
+      Line 1 of Meme:<br>
+      <input type="text" name="user-first-ln" value="First Line of Meme">
+      <br>
+       Line 2 of Meme:<br>
+      <input type="text" name="user-second-ln" value="Second Line of Meme">
+      <br>
+      
+      Meme Type:<br>
+     <select name="meme-type">
+        <option value="college-grad">Happy College Grad</option>
+        <option value="thinking-ape">Deep Thought Monkey</option>
+        <option value="coding">Learning to Code</option>
+        <option value="old-class">Old Classroom</option>
+      </select>
+      
+      <input type="submit" value="Go!">
+    </form>
+  </body>
+</html>

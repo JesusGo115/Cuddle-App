@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A Meme</title>
+    <style>
+     
+    </style>
+  </head>
+  <body>
+    {% for meme in all_memes %}
+    
+        <div>
+          {{meme.line1}}
+          {{meme.line2}}
+          {{meme.get_meme_url()}}
+        </div>
+        <br> <br>
+    
+    {% endfor %}
+  </body>
+</html>
