@@ -8,10 +8,13 @@
         <h1 style="text-align: center">Info Page!</h1>
         <div class="info">
             <input name="name" type="text" placeholder="Your Name"><br>
-            <input name="age" type="text" placeholder="Your Age"><br>
-            <input name="gender" type="text" placeholder="Your Gender"><br>
-            <input name="number" type="text" placeholder="Your Phone Number"><br>
-            <input name="zip" type="text" placeholder="Your Zip Code"><br>
+            <input name="age" type="number" placeholder="Your Age"><br>
+     <select name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select><br>
+            <input name="number" type="number" placeholder="Your Phone Number"><br>
+            <input name="zip" type="number" placeholder="Your Zip Code"><br>
         </div>
         <form method=POST action="/interface" class="login">
             <button type="submit" ><font size="4"><strong>Submit</strong></font></button>
