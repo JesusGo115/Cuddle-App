@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
+     <link rel="stylesheet" href="css/style.css">
     <head>
         
     </head>
     <body>
-        <h1>Info Page!</h1>
+        <h1 style="text-align: center">Info Page!</h1>
         
-        <form method=POST action="/info">
-            <input name="user-name" type="text" placeholder="Username"><br>
-            <input name="password" type="text" placeholder="Password"><br>
+        <form method=POST action="/info" class="login">
+            <input name="person-name" type="text" placeholder="Your Name"><br>
+            <input name="phone-number" type="text" placeholder="Phone Number"><br>
+            <input name="email" type="text" placeholder="Email"><br>
             <input type="submit">
         </form>
 

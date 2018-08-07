@@ -19,6 +19,14 @@ body {
     padding-top: 200px;
 }
 
+.login {
+  display: flex;
+  justify-content: center;
+  background-position: center;
+  text-align: center;
+  vertical-align: baseline;
+}
+
 #submit{
   height: 100px;
   width: 300px;
