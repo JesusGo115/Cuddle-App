@@ -18,11 +18,10 @@ class AboutPage(webapp2.RequestHandler):
     def get(self):
         about_template = the_jinja_env.get_template('templates/about.html')
         self.response.write(about_template.render())
-   
-
 
 class InfoPage(webapp2.RequestHandler):
     def get(self):
+<<<<<<< HEAD
         self.session = Session()
         if "email" in self.session: 
             self.response.write ("Hello " + self.session["email"])
@@ -46,12 +45,21 @@ class MainInterface(webapp2.RequestHandler):
         
         
         
+=======
+        about_template = the_jinja_env.get_template('templates/info.html')
+        self.response.write(about_template.render())
+
+class Interface(webapp2.RequestHandler):
+    def post(self):
+        about_template = the_jinja_env.get_template('templates/interface.html')
+        self.response.write(about_template.render())
+>>>>>>> 92dc45b2205940f56f5073b68d635205bce88e61
 
 
 app = webapp2.WSGIApplication([
     ('/', AboutPage),
     ('/info', InfoPage),
-    ('/main', MainInterface),
+    ('/interface', Interface),
 ], debug=True)
 
 

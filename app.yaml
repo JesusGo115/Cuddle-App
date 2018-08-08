@@ -6,6 +6,9 @@ handlers:
 - url: /css
   static_dir: css
   
+- url: /templates
+  static_dir: html
+  
 - url: /img
   static_dir: img
 

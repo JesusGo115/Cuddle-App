@@ -39,3 +39,11 @@ body {
 #img2 {
   height: 250px;
 }
+
+.info {
+  font-size: 200%;
+  justify-content: center;
+  text-align: center;
+  vertical-align: baseline;
+  margin-bottom: 30px;
+}
