@@ -2,7 +2,10 @@ import webapp2
 from random import shuffle
 import jinja2
 import os
+from models import Meme
+'''
 from util.sessions import Session
+'''
 
 
 
@@ -28,19 +31,22 @@ class StartPage(webapp2.RequestHandler):
 '''
 class SignUpPage(webapp2.RequestHandler):
     def get(self):
+        '''
         self.session = Session()
         if "email" in self.session: 
             self.response.write ("Hello " + self.session["email"])
         else:    
             about_template = the_jinja_env.get_template('templates/info.html')
             self.response.write(about_template.render())
-    
+    '''
     def post(self):
         self.response.write("Received a post request")
         email = self.request.get("email")
         self.response.write(email)
+        '''
         self.session = Session()
         self.session['email'] = email
+        '''
         
 class MainInterface(webapp2.RequestHandler):
     def get(self):
