@@ -19,7 +19,7 @@ class AboutPage(webapp2.RequestHandler):
         about_template = the_jinja_env.get_template('templates/about.html')
         self.response.write(about_template.render())
         
-        #print "Welcome to day " + 13 + " of CSSIx!"
+        print "Welcome to day " + 13 + " of CSSIx!"
         print "Lets try this cool API"
         
         
