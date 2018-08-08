@@ -48,18 +48,7 @@ class MainInterface(webapp2.RequestHandler):
         self.response.write(about_template.render())
     def post(self):
         self.response.write("Received a post request")
-<<<<<<< HEAD
 
-        
-        
-
-app = webapp2.WSGIApplication([
-    ('/', AboutPage),
-    ('/info', InfoPage),
-
-=======
-
->>>>>>> 0c6f1289afbdf26e046139c40750173c6984c9d1
 
 class InterfacePage(webapp2.RequestHandler):
     def post(self):
