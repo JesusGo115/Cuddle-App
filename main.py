@@ -28,7 +28,6 @@ class StartPage(webapp2.RequestHandler):
 '''
 class SignUpPage(webapp2.RequestHandler):
       def get(self):
-      def get(self):
         self.session = Session()
         if "email" in self.session: 
             self.response.write ("Hello " + self.session["email"])
@@ -59,7 +58,6 @@ class InterfacePage(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
     ('/', StartPage),
-    ('/signin', SignInPage),
     ('/signup', SignUpPage),
     ('/interface', InterfacePage),
 ], debug=True)
