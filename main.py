@@ -2,7 +2,7 @@ import webapp2
 from random import shuffle
 import jinja2
 import os
-#from models import Meme
+
 '''
 from util.sessions import Session
 '''

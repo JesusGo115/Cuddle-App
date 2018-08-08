@@ -16,10 +16,4 @@ class Meme(ndb.Model):
             url = 'https://upload.wikimedia.org/wikipedia/commons/b/b9/Typing_computer_screen_reflection.jpg'
         return url
 
-class Meme(ndb.Model):
-    line1 = ndb.StringProperty(required=True)
-    line2 = ndb.StringProperty(required=True)
-    img_choice = ndb.StringProperty(required=False)
-    
-
 
