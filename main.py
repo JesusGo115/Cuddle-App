@@ -48,6 +48,7 @@ class InterfacePage(webapp2.RequestHandler):
 app = webapp2.WSGIApplication([
     ('/', StartPage),
     ('/signup', SignUpPage),
+    ('/signin', SignInPage),
     ('/interface', InterfacePage),
 ], debug=True)
 
