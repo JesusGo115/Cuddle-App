@@ -27,9 +27,13 @@ class ContactPage(webapp2.RequestHandler):
         about_template = the_jinja_env.get_template('templates/contact.html')
         self.response.write(about_template.render())
    
-
-
-
+    def post(self):
+        isError = False
+        if isError:
+            self.response.write("Error! : ( ")
+        else:
+            self.redirect("/")
+    
 app = webapp2.WSGIApplication([
     ('/', AboutPage),
     ('/contact', ContactPage),
