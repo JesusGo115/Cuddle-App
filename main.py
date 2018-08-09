@@ -22,8 +22,6 @@ def get_all_people(self):
 def run_query(first_line, second_line, third_line, fourth_line, fifth_line):
     people = Peoples(name=first_line, age = second_line, gender = third_line, number = fourth_line, zip_code = fifth_line)
     people_key = people.put()
-    print("&&&&&&&&&&&&&&&&&&&&&&&&&")
-    print people_key
 
     
     
@@ -33,12 +31,14 @@ class StartPage(webapp2.RequestHandler):
       self.response.write(about_template.render())
       
 
-
 class SignInPage(webapp2.RequestHandler):
     def get(self):
         about_template = the_jinja_env.get_template('templates/signin.html')
-        self.response.write(about_template.render()
-        
+
+        self.response.write(about_template.render())
+
+  
+
 class SignUpPage(webapp2.RequestHandler):
     def get(self):
         about_template = the_jinja_env.get_template('templates/signup.html')
