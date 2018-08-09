@@ -3,9 +3,19 @@
     <link rel="stylesheet" href="css/style.css">
 <body>
     <div class="interface">
+        {% for person in all_people_key %}
+
         <header>
             <h1 style="text-align: center"><strong>Welcome to CuddleMe!</strong></h1>
         </header>
-    </div>
+        <div>
+            {{person.name}}
+            {{person.age}}
+            {{person.gender}}
+            {{person.number}}
+            {{person.zip_code}}
+             
+        </div>
+        {% endfor %}
 </body>
 </html>

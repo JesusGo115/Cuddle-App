@@ -1,6 +1,8 @@
 from google.appengine.ext import ndb
 
-class Meme(ndb.Model):
-    line1 = ndb.StringProperty(required=True)
-    line2 = ndb.StringProperty(required=True)
-    img_choice = ndb.StringProperty(required=False)
+class Peoples(ndb.Model):
+    name = ndb.StringProperty(required=True)
+    age = ndb.StringProperty(required=True)
+    gender = ndb.StringProperty(required=True)
+    number = ndb.StringProperty(required=True)
+    zip_code = ndb.StringProperty(required=True)
