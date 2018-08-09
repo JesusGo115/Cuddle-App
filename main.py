@@ -37,8 +37,7 @@ class StartPage(webapp2.RequestHandler):
 class SignInPage(webapp2.RequestHandler):
     def get(self):
         about_template = the_jinja_env.get_template('templates/signin.html')
-        self.response.write(about_template.render())
-
+        self.response.write(about_template.render()
         
 class SignUpPage(webapp2.RequestHandler):
     def get(self):
