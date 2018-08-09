@@ -1,9 +1,63 @@
 .container{
-    background-color: #fff;
-    padding: 0 60px;
+ 
+    padding: 0 100px;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    text-align: center;
+}
+
+body {
+  height: 100%;
+}
+
+.signin {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+/*    padding-top: 200px; */
+    
+}
+.signgitup {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+/*    padding-top: 300px; */
+    
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  vertical-align: baseline;
+  font-size: 4;
+ 
+}
+
+#submit{
+  height: 100px;
+  width: 300px;
 }
 
 
+#img {
+  height: 100px;
+}
+
+<<<<<<< HEAD
 #logo {
   height: 100px
+=======
+#img2 {
+  height: 250px;
+}
+
+.info {
+  font-size: 200%;
+  justify-content: center;
+  text-align: center;
+  vertical-align: baseline;
+  margin-bottom: 30px;
+>>>>>>> d55dc03f58415e538b9e0d89974f28963fe6f656
 }
