@@ -15,17 +15,25 @@
            background-size:140%;
        }
     </style>
-    <div class= "display">
-        {% for person in all_people_key %}
-        <div class="me">
-            <hr>
-            <mark>{{person.name}}</mark>
-            <mark>{{person.age}}</mark>
-            <mark>{{person.gender}}</mark>
-            <mark>{{person.number}}</mark>
-            <mark>{{person.zip_code}}</mark>
+    <div class = "display">
+        
+        <div class = "me">
+            Hello, {{user_name_key}}! Here are people in your area.
         </div>
+        
+        <div class = "others">
+        {% for person in all_people_key %}
+            {% if usernum_key != person.number and zip_key == person.zip_code %}
+                <hr>
+                <mark>{{person.name}}</mark>
+                <mark>{{person.age}}</mark>
+                <mark>{{person.gender}}</mark>
+                <mark>{{person.number}}</mark>
+                <mark>{{person.zip_code}}</mark>
+            {% endif %}
         {% endfor %}
+        </div>
+        
         
     </div>
 </body>

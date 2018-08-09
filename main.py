@@ -59,17 +59,18 @@ class InterfacePage(webapp2.RequestHandler):
         print(people_name, people_age)
         run_query(people_name, people_age, people_gender, people_number, people_zip_code)
         
-        #the_variable_dict = get_all_people(self)
-    
-        #self.response.write(interface_template.render(the_variable_dict))
-        self.redirect('/interface')
+        the_variable_dict = get_all_people(self)
+        the_variable_dict['usernum_key'] = people_number
+        the_variable_dict['user_name_key'] = people_name
+        the_variable_dict['zip_key'] = people_zip_code
+        self.response.write(interface_template.render(the_variable_dict))
+        #self.redirect('/interface')
     def get(self):
         print "====InterfacePage (get)====="
-
+        print "**********"
         interface_template = the_jinja_env.get_template('templates/interface.html')
         
         the_variable_dict = get_all_people(self)
-        
         self.response.write(interface_template.render(the_variable_dict))
 
 app = webapp2.WSGIApplication([

@@ -10,11 +10,27 @@
     width: 50%;
 }
 
+
+
 .display{
-  grid-template-columns: 200px 200px;
+  display: grid;
+  display: flex;
+  grid-template-columns: 1 1;
   grid-template-rows: auto;
+  justify-items: center;
   grid-template-areas: 
-    "me others";
+    "me others others others";
+  background-position: center;
+}
+
+.me {
+  grid-area: me;
+  font-size: 22px;
+}
+
+.others {
+  grid-area: others;
+  font-size: 24px;
 }
 
 body {
