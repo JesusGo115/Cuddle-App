@@ -15,15 +15,15 @@
            background-size:140%;
        }
     </style>
-    <div class="interface">
+    <div>
         {% for person in all_people_key %}
         <div>
-            {{person.name}}
-            {{person.age}}
-            {{person.gender}}
-            {{person.number}}
-            {{person.zip_code}}
-             
+            <hr>
+            <mark>{{person.name}}</mark>
+            <mark>{{person.age}}</mark>
+            <mark>{{person.gender}}</mark>
+            <mark>{{person.number}}</mark>
+            <mark>{{person.zip_code}}</mark>
         </div>
         {% endfor %}
         
