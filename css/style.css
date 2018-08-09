@@ -48,6 +48,10 @@ body {
   height: 100px;
 }
 
+<<<<<<< HEAD
+#logo {
+  height: 100px
+=======
 #img2 {
   height: 250px;
 }
@@ -58,4 +62,5 @@ body {
   text-align: center;
   vertical-align: baseline;
   margin-bottom: 30px;
+>>>>>>> d55dc03f58415e538b9e0d89974f28963fe6f656
 }

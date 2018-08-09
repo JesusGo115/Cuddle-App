@@ -3,6 +3,7 @@ from random import shuffle
 import jinja2
 import os
 from listpeople import Peoples
+
 from google.appengine.api import urlfetch
 import json
 
@@ -36,9 +37,11 @@ class StartPage(webapp2.RequestHandler):
 class SignInPage(webapp2.RequestHandler):
     def get(self):
         about_template = the_jinja_env.get_template('templates/signin.html')
+
         self.response.write(about_template.render())
 
   
+
 class SignUpPage(webapp2.RequestHandler):
     def get(self):
         about_template = the_jinja_env.get_template('templates/signup.html')
@@ -74,6 +77,7 @@ app = webapp2.WSGIApplication([
     ('/signup', SignUpPage),
     ('/interface', InterfacePage),
     ('/signin', SignInPage)
+
 ], debug=True)
 
 
