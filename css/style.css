@@ -10,6 +10,13 @@
     width: 50%;
 }
 
+.display{
+  grid-template-columns: 200px 200px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "me others";
+}
+
 body {
   height: 100%;
 }
