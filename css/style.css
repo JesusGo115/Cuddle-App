@@ -15,15 +15,11 @@ body {
 }
 
 .signin { 
-    width: 100%;
-    height: 100%;
     text-align: center;
 /*    padding-top: 200px; */
     
 }
-.signgitup {
-    width: 100%;
-    height: 100%;
+.signup {
     text-align: center;
 /*    padding-top: 300px; */
     
@@ -48,10 +44,7 @@ body {
   height: 100px;
 }
 
-<<<<<<< HEAD
-#logo {
-  height: 100px
-=======
+
 #img2 {
   height: 250px;
 }
@@ -62,5 +55,4 @@ body {
   text-align: center;
   vertical-align: baseline;
   margin-bottom: 30px;
->>>>>>> d55dc03f58415e538b9e0d89974f28963fe6f656
 }
