@@ -2,7 +2,7 @@ import webapp2
 from random import shuffle
 import jinja2
 import os
-from listpeople import Peoples
+from listpeople import People
 
 from google.appengine.api import urlfetch
 import json
@@ -14,7 +14,7 @@ the_jinja_env = jinja2.Environment(
 
 def get_all_people(self):
     print "=====(get_all_people)===="
-    all_people = Peoples.query().fetch()
+    all_people = People.query().fetch()
         
     the_variable_dict = {
             "all_people_key": all_people
